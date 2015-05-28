@@ -748,7 +748,7 @@ try:
 	cardtype = AnyCardType()
 	# request card insertion
 	print 'insert a card within 10s'
-	cardrequest = CardRequest( timeout=10, cardType=cardtype )
+	cardrequest = CardRequest( timeout=3, cardType=cardtype )
 	cardservice = cardrequest.waitforcard()
 
 	# attach the console tracer
